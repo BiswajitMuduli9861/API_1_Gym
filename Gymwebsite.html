@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuna Gym website</title>
+
+</head>
+<link dref="https://fonts.google.com/specimen/Noto+Sans" alt="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        font-family:'Noto Sans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:white;
+        margin:0px;
+        padding:0px;
+        background:url('fitness.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .left{
+        display:inline-block;
+        position:absolute;
+        top:20px;
+        left:44px;
+        <!-- border:2px solid blue; -->
+        
+    }
+    .mid{
+        
+        display:block;
+        width:45%;
+        margin:20px auto;
+        
+        <!-- border:2px solid yellow; -->
+    }
+    .right{
+        position:absolute;
+        right:50px;
+        top:20px;
+        display:inline-block;
+        <!-- border:2px solid purple; -->
+    
+    }
+    .navbar li{
+        
+        display:inline-block;
+        font-size:23px;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration:none;
+        padding:30px 30px;
+    }
+    .navbar li a:hover,.navbar li a navbar{
+        text-decoration: underline;
+        color:green;
+    }
+    .left img{
+        height:40px;
+        width:122px;
+        filter:invert(100%);
+    
+    }
+    .left div{
+        text-align: center;
+    }
+    .btn{
+        font-family:'Noto Sans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin:13px 10px;
+        padding:px 5px;
+        color:white;
+        background-color: black;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size:15px;
+        cursor: pointer;
+
+        
+    }
+    .btn:hover{
+
+        color:black;
+        text-decoration: underline;
+        background-color: green;
+    }
+    .container{
+        border:2px solid green;
+        border-radius:40px;
+        margin:100px 80px;
+        padding:20px 20px;
+        width:600px;
+        background-color:black;
+        cursor:pointer;
+        border:3px solid green;
+        float:right;
+    }
+    .from-group input{
+        border:2px solid rgb(54, 201, 98);
+        display:block;
+        text-align: center;
+        width:500px;
+        padding:10px 10px;
+        margin:4px auto; 
+        border-radius:10px;
+        font-size:15px;
+        
+
+
+    }
+    .lbtn
+        {
+        display:block;
+        text-align:center;
+        width:110px;
+        padding:7px 10px;
+        margin:20px auto;
+        border:2px solid rgb(54,201,98);
+        border-radius:10px;
+        cursor:pointer;
+        background-color: black;
+        color:white;
+        font-size:20px;
+        
+
+
+    }
+    .container h1{
+        text-align:center;
+
+    }
+    
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="dumbleslogo.jpg" alt="">
+            <div>Kuna Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+        </div>
+        <div class="right">
+            <!-- Right box for buttons -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym Kakatpur now</h1>
+        <form action="noaction.php">
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter Your First Name">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter Your Middle Name">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter Your Last Name">
+            </div>
+            <div class="from-group">
+                <div class="from-group">
+                    <input type="text" name="" placeholder="Enter Your Age">
+                </div>
+                <input type="text" name="" placeholder="Enter Your Mobile Number">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter Your Email-ID">
+            </div>
+           <button class="lbtn">submit</button>
+
+            
+        </form>
+    </div>
+</body>
+</html>
